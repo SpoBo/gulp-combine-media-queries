@@ -352,7 +352,6 @@ module.exports = function(options) {
 
     if (options.use_external && processedCSS.media.length !== 0) {
       var f = new gutil.File({
-        base: file.base,
         path: extFilename,
         contents: new Buffer(strMediaStyles)
       });
